@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Drag-and-Drop Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script> 
+
+    <div id="dropZone">
+
+      <div
+        id="dropBox1"
+        class="quadrado"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <p class="quadrado_fundo" width="200"></p>  
+
+      </div>
+
+      <div
+        id="dropBox2"
+        class="triangulo"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <p class="triangulo_fundo" width="200"></p>
+      </div>
+    </div>
+
+    <div
+      id="formas"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+    >
+    </div>
+    
+    <button class="button button4" onclick="check()"></button> 
+      
+    
+  </body>
+</html>
