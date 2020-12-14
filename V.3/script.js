@@ -94,11 +94,19 @@ function adcElemento(){
     }
 
     /*Atributo da grossura da imagem*/
-    if(tam == 0){
-      arrayFiguras[i].setAttribute('data-tamanho', 'Pequena');
-    }
-    else{
-      arrayFiguras[i].setAttribute('data-tamanho', 'Grande');
+    switch(tam){
+      case 0:
+        arrayFiguras[i].setAttribute('data-tamanho', 'Pequeno');
+        break;
+      case 1:
+        arrayFiguras[i].setAttribute('data-tamanho', 'Medio');
+        break;
+      case 2:
+        arrayFiguras[i].setAttribute('data-tamanho', 'Grande');
+        break;
+      default:
+        arrayFiguras[i].setAttribute('data-tamanho', 'Extra grande');
+        break;
     }
 
   /*const lista = document.getElementById('formas');
