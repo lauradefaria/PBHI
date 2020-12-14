@@ -125,16 +125,18 @@ function check(){                //Confere se acertou
   for(var i=0; i<4; i++){
     /*Adiciona um contador para saber se o usuário acerta quadrados*/ 
     elemento = document.getElementById(arrayPrimeira[i]);
-    console.log(elemento);
-    console.log(elemento.getAttribute('data-tipo'));
-    if((elemento.getAttribute('data-tipo')) != 'Quadrado' && elemento != null){
-      flagQ++;
+    if(elemento != null){
+      if((elemento.getAttribute('data-tipo')) != 'Quadrado'){
+        flagQ++;
+      }
     }
 
     /*Adiciona um contador para saber se o usuário acerta triangulos*/ 
     elemento2 = document.getElementById(arraySegunda[i]);
-    if((elemento.getAttribute('data-tipo')) != 'Triangulo' && elemento2 != null){
-      flagT++;
+    if(elemento2 != null){
+      if((elemento2.getAttribute('data-tipo')) != 'Triangulo'){
+        flagT++;
+      }
     }
   }
 
