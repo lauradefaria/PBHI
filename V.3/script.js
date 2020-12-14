@@ -46,14 +46,14 @@ function adcElemento(){
   var divFormas = document.getElementById('formas');  //Cria dinâmicamente uma div formas
 
   var fonte='';              //source de cada imagem
-  var cor=2, tipo=1, tam=1;  //Atributos de cada imagem
+  var cor, tipo, tam;  //Atributos de cada imagem
   
   for(var i=0; i<4; i++){            //Prepara as 6 imagens
 
     /*Gera um número aleatório de cor, tipo e grossura*/
-    /*cor = Math.floor(Math.random() * 3);
+    cor = Math.floor(Math.random() * 3);
     tipo = Math.floor(Math.random() * 4);
-    tam = Math.floor(Math.random() * 2);*/
+    tam = Math.floor(Math.random() * 2);
 
     /*cria um elemento imagem e coloca a source*/
     arrayFiguras[i] = document.createElement("img");
