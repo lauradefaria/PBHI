@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Drag-and-Drop Example</title>
+    <link rel="stylesheet" href="game-style.css" />
+  </head>
+  <body>
+
+    <div id="dropZone">
+
+      <div
+        id="container1"
+        class="quadrado quadrado_fundo"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >  
+
+      </div>
+
+      <div
+        id="container2"
+        class="triangulo triangulo_fundo"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+      
+      </div>
+    </div>
+
+    
+    <button class="button button4" onclick="check()" ></button> 
+      
+    <script src="game-script.js"></script> 
+  </body>
+</html>
