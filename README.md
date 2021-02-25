@@ -1,2 +1,2 @@
-# Projeto Paraíba Humana e Inteligênte - Padrões
+# Projeto Paraíba Humana e Inteligente - Padrões
 
